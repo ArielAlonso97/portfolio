@@ -86,66 +86,77 @@ export const es_translations: ITranslations = {
           porcentage: 90,
           description:
             "Maquetado semántico, responsive design con Flexbox y Grid, accesibilidad, animaciones básicas y uso avanzado de Tailwind CSS.",
+          years: 4,
         },
         {
           key: "React.js",
           porcentage: 90,
           description:
             "Componentes funcionales, hooks personalizados, manejo de estado global (Context API), optimización de rendimiento.",
+          years: 4,
         },
         {
           key: "Next.js",
           porcentage: 90,
           description:
             "Rutas dinámicas, API Routes, manejo de metadata con Head y despliegue en Vercel.",
+          years: 4,
         },
         {
           key: "Angular",
           porcentage: 25,
           description:
             "Creación de componentes, data binding, uso básico de servicios e integración con APIs REST.",
+          years: 1,
         },
         {
           key: "Express.js",
           porcentage: 70,
           description:
             "Creación de APIs REST, middleware personalizado, validación de datos, conexión a bases de datos (MongoDB, PostgreSQL).",
+          years: 3,
         },
         {
           key: "JavaScript",
           porcentage: 85,
           description:
             "ES6+, manipulación del DOM, asincronía con Promises/async-await, manejo de errores y estructuras de datos comunes.",
+          years: 4,
         },
         {
           key: "C#",
           porcentage: 40,
           description:
             "Estructuras de control, POO, desarrollo de APIs básicas con ASP.NET Core y comprensión general del ecosistema .NET.",
+          years: 1,
         },
         {
           key: "Git",
           porcentage: 70,
           description:
             "Control de versiones, ramas, pull requests, merge/rebase, trabajo colaborativo en GitHub/GitLab.",
+          years: 4,
         },
         {
           key: "Python",
           porcentage: 40,
           description:
             "Sintaxis clara, POO, scripts de automatización básocps y desarrollo de APIs básicas con FastAPI.",
+          years: 2,
         },
         {
           key: "Django",
           porcentage: 40,
           description:
             "Creación de modelos, rutas, vistas, panel de administración, autenticación de usuarios y despliegue básico.",
+          years: 1,
         },
         {
           key: "WordPress",
           porcentage: 60,
           description:
             "Creación y personalización de sitios usando Divi, instalación de plugins, configuración de SEO y optimización de rendimiento.",
+          years: 2,
         },
       ],
     },
@@ -200,6 +211,7 @@ export const es_translations: ITranslations = {
     location: "Mérida, Yucatán",
     phone: "(+52) 99 92 97 19 85",
     email: "ariel32_124@hotmail.com",
+    web: "arielalvarado.com",
   },
   contactForm: {
     namePlaceholder: "Tu Nombre",

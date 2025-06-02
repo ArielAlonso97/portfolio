@@ -196,6 +196,7 @@ export const en_translations: ITranslations = {
     location: "Mérida, Yucatán",
     phone: "(+52) 99 92 97 19 85",
     email: "ariel32_124@hotmail.com",
+    web: "arielalvarado.com",
   },
   contactForm: {
     namePlaceholder: "Your Name",

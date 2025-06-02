@@ -2,6 +2,14 @@ import React, { useEffect, useRef, useState } from "react";
 import BarSkills from "./BarSkills";
 import { useLanguage } from "@/context/LanguageContext";
 
+const inferYears = (percentage: number): string => {
+  if (percentage >= 85) return "~4 años de experiencia práctica";
+  if (percentage >= 70) return "~3 años de experiencia práctica";
+  if (percentage >= 50) return "~2 años de experiencia práctica";
+  if (percentage >= 30) return "~1 año de experiencia práctica";
+  return "<1 año de experiencia práctica";
+};
+
 const SkillModule = ({ skill }: { skill: ISkill }) => {
   const divRef = useRef<HTMLDivElement | null>(null);
   const { language } = useLanguage();
@@ -30,7 +38,7 @@ const SkillModule = ({ skill }: { skill: ISkill }) => {
           <div>
             <h3 className="text-xl font-bold">{skill.key}</h3>
             <p className="text-sm text-gray-300">
-              {language.skills.percentageDes}: {skill.porcentage}%
+              {inferYears(skill.porcentage)}
             </p>
           </div>
 

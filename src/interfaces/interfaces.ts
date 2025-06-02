@@ -13,7 +13,7 @@ interface IAlert {
 interface ISkill {
   key: string;
   porcentage: number;
-
+  years?: number;
   description?: string;
 }
 
@@ -77,6 +77,7 @@ interface ITranslations {
     location: string;
     phone: string;
     email: string;
+    web: string;
   };
   contactForm: {
     namePlaceholder: string;
