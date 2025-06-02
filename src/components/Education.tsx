@@ -22,7 +22,7 @@ const Education = () => {
       script.id = scriptId;
       document.body.appendChild(script);
     }
-  }, []);
+  }, [language]);
 
   return (
     <section
