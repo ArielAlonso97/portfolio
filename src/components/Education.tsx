@@ -22,6 +22,22 @@ const Education = () => {
       script.id = scriptId;
       document.body.appendChild(script);
     }
+  }, []);
+
+  useEffect(() => {
+    // Si ya está cargado el script de Credly, fuerza re-evaluación
+    const tryRenderCredlyBadges = () => {
+      if (window && (window as any).CredlyBadge) {
+        (window as any).CredlyBadge.renderAll();
+      }
+    };
+
+    // Esperar un poco para asegurar que el DOM ya tiene los nuevos iFrames
+    const timeout = setTimeout(() => {
+      tryRenderCredlyBadges();
+    }, 500); // 500ms suele ser suficiente
+
+    return () => clearTimeout(timeout);
   }, [language]);
 
   return (
