@@ -12,7 +12,10 @@ const Presentation = () => {
 
   const buttons = [
     { value: "GitHub", url: "https://github.com/ArielAlonso97" },
-    { value: contact.resumeButton, url: "/cv.pdf" },
+    {
+      value: contact.resumeButton,
+      url: `/resume/ArielAlvarado_${language.language}.pdf`,
+    },
   ];
 
   return (
@@ -51,6 +54,7 @@ const Presentation = () => {
                 href={button.url}
                 target="_blank"
                 rel="noopener noreferrer"
+                download={button.value == contact.resumeButton ? true : false}
                 className="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition"
               >
                 {button.value}
