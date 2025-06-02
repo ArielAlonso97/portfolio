@@ -76,9 +76,13 @@ const Education = () => {
               },
             }}
           >
-            {education.certificates.list.map((certificate, index) => (
-              <SwiperSlide key={index}>
-                <div className="flex flex-col items-center bg-white/80 p-4 rounded-2xl shadow-md w-[180px] mx-auto">
+            {education.certificates.list.map((certificate) => (
+              <SwiperSlide key={certificate.iFrame || certificate.title}>
+                <div
+                  className="flex flex-col items-center bg-white/80 p-4 rounded-2xl shadow-md w-[180px] mx-auto"
+                  role="group"
+                  aria-label={`Certificado: ${certificate.title} emitido por ${certificate.issuedBy}`}
+                >
                   <h3 className="text-base font-bold text-center mb-1">
                     {certificate.title}
                   </h3>
