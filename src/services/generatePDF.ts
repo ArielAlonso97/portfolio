@@ -143,5 +143,5 @@ export const generatePDF = (translations: ITranslations) => {
     y += 4;
   });
 
-  doc.save("ArielAlvarado_CV.pdf");
+  doc.save(`"ArielAlvarado_CV_${translations.language}.pdf"`);
 };
