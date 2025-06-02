@@ -1,6 +1,8 @@
 interface ILanguageContext {
   language: ITranslations;
   setlanguage: React.Dispatch<React.SetStateAction<ITranslations>>;
+  noLocalStrLang: boolean;
+  setnoLocalStrLang: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 interface IAlert {
@@ -31,6 +33,7 @@ interface ICertificate {
   issuedBy: string;
 }
 interface ITranslations {
+  language: string;
   navbar: {
     sections: INavbarSection[];
   };

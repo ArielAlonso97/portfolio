@@ -1,4 +1,5 @@
 export const es_translations: ITranslations = {
+  language: "es",
   navbar: {
     sections: [
       { title: "Presentación", id: "presentation" },

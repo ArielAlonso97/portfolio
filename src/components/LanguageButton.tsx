@@ -4,12 +4,18 @@ import { es_translations } from "@/translations/translations_es";
 import React from "react";
 
 const LanguageButton = () => {
-  const { language, setlanguage } = useLanguage();
+  const { language, setlanguage, setnoLocalStrLang } = useLanguage();
 
   const languageButtons = [
     { data: es_translations, text: "ES" },
     { data: en_translations, text: "EN" },
   ];
+
+  function handleSelectLang(e: any, lang: ITranslations) {
+    setlanguage(lang);
+    localStorage.setItem("lang", lang.language);
+    setnoLocalStrLang(false);
+  }
 
   return (
     <div className="mt-20 flex justify-center gap-4">
@@ -25,7 +31,7 @@ const LanguageButton = () => {
                   ? "bg-black text-white border-black"
                   : "bg-white text-black border-gray-300 hover:bg-gray-100 hover:shadow-md"
               }`}
-            onClick={() => setlanguage(button.data)}
+            onClick={(e) => handleSelectLang(e, button.data)}
           >
             {button.text}
           </button>

@@ -22,8 +22,11 @@ export function useLanguage() {
 
 const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [language, setlanguage] = useState<ITranslations>(es_translations);
+  const [noLocalStrLang, setnoLocalStrLang] = useState(false);
   return (
-    <LanguageContext.Provider value={{ language, setlanguage }}>
+    <LanguageContext.Provider
+      value={{ language, setlanguage, noLocalStrLang, setnoLocalStrLang }}
+    >
       {children}
     </LanguageContext.Provider>
   );
