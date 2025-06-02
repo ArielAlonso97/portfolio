@@ -10,6 +10,7 @@ const Education = () => {
   const { education } = language;
 
   const [isClient, setIsClient] = useState(false);
+  const [certCount, setCertCount] = useState(0); // <- NUEVO
 
   useEffect(() => {
     setIsClient(true);
@@ -24,21 +25,20 @@ const Education = () => {
     }
   }, []);
 
+  // Renderizar los badges cada vez que cambie el idioma o el número de certificados
   useEffect(() => {
-    // Si ya está cargado el script de Credly, fuerza re-evaluación
     const tryRenderCredlyBadges = () => {
-      if (window && (window as any).CredlyBadge) {
+      if (typeof window !== "undefined" && (window as any).CredlyBadge) {
         (window as any).CredlyBadge.renderAll();
       }
     };
 
-    // Esperar un poco para asegurar que el DOM ya tiene los nuevos iFrames
     const timeout = setTimeout(() => {
       tryRenderCredlyBadges();
-    }, 500); // 500ms suele ser suficiente
+    }, 500); // Esperar medio segundo después de renderizar
 
     return () => clearTimeout(timeout);
-  }, [language]);
+  }, [language, certCount]); // <- AHORA depende también de la cantidad de certificados
 
   return (
     <section
@@ -54,7 +54,7 @@ const Education = () => {
           <div className="w-24 h-1 mt-4 bg-black rounded-full" />
         </div>
 
-        {/* Universidades (sin cambiar el diseño original) */}
+        {/* Universidades */}
         <div className="flex flex-col gap-8 mb-20">
           {education.universities.map((uni, index) => (
             <div
@@ -91,6 +91,7 @@ const Education = () => {
                 slidesPerView: 3,
               },
             }}
+            onSwiper={() => setCertCount(education.certificates.list.length)} // <- NUEVO: actualiza contador de certificados al montar el carrusel
           >
             {education.certificates.list.map((certificate) => (
               <SwiperSlide key={certificate.iFrame || certificate.title}>
