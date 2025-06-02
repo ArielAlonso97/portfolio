@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import LanguageProvider from "@/context/LanguageContext";
+import AlertProvider from "@/context/AlertContext";
+import "keen-slider/keen-slider.min.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +30,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <AlertProvider>
+          <LanguageProvider>{children}</LanguageProvider>
+        </AlertProvider>
       </body>
     </html>
   );
