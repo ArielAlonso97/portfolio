@@ -82,7 +82,7 @@ export const en_translations: ITranslations = {
           porcentage: 70,
           description:
             "Development of RESTful APIs with ASP.NET Core, routing, middleware, JWT authentication, integration with Entity Framework, migrations, validations, and Clean Architecture principles.",
-          years: 1,
+          years: 2,
         },
         {
           key: "Express.js",

@@ -2,20 +2,11 @@ import React, { useEffect, useRef, useState } from "react";
 import BarSkills from "./BarSkills";
 import { useLanguage } from "@/context/LanguageContext";
 
-const inferYears = (percentage: number, language: string): string => {
+const inferYears = (ages: number, language: string): string => {
   if (language === "en") {
-    if (percentage >= 85) return "~4 years of practical experience";
-    if (percentage >= 70) return "~3 years of practical experience";
-    if (percentage >= 50) return "~2 years of practical experience";
-    if (percentage >= 30) return "~1 year of practical experience";
-    return "<1 year of practical experience";
+    return `~${ages} years of practical experience`;
   } else {
-    // Español (por defecto)
-    if (percentage >= 85) return "~4 años de experiencia práctica";
-    if (percentage >= 70) return "~3 años de experiencia práctica";
-    if (percentage >= 50) return "~2 años de experiencia práctica";
-    if (percentage >= 30) return "~1 año de experiencia práctica";
-    return "<1 año de experiencia práctica";
+    return `~${ages} años de experiencia práctica`;
   }
 };
 
@@ -47,7 +38,7 @@ const SkillModule = ({ skill }: { skill: ISkill }) => {
           <div>
             <h3 className="text-xl font-bold">{skill.key}</h3>
             <p className="text-sm text-gray-300">
-              {inferYears(skill.porcentage, language.language)}
+              {inferYears(skill.years || 1, language.language)}
             </p>
           </div>
 
