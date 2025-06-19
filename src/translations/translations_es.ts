@@ -13,7 +13,7 @@ export const es_translations: ITranslations = {
     title: "Presentación",
     role: "Web Developer Mid",
     description:
-      "Cuento con una formación en Diseño Digital, la cual me brindó habilidades de diseño que han sido fundamentales en mi desarrollo como programador front-end. Esta base despertó mi interés por el desarrollo web, y actualmente me encuentro cursando una segunda carrera en Sistemas Computacionales mientras avanzo en el camino para convertirme en programador full-stack. Me especializo en tecnologías como React y Python, entre otras. Con más de 4 años de experiencia como desarrollador, he adquirido un conjunto variado de habilidades para la creación de sitios y aplicaciones web.",
+      "Soy desarrollador full stack con experiencia en la creación de aplicaciones web utilizando tecnologías como ASP.NET Core, C#, Express.js, SQL Server, PostgreSQL, MongoDB, React y Next.js. Actualmente curso una Ingeniería en Sistemas Computacionales y tengo más de 4 años de experiencia en desarrollo. He trabajado tanto en soluciones internas como en productos SaaS para sectores inmobiliarios y empresariales. Me enfoco en construir sistemas escalables, mantenibles y con buenas prácticas de arquitectura, seguridad y control de versiones.",
   },
   education: {
     title: "Educación",
@@ -82,84 +82,64 @@ export const es_translations: ITranslations = {
       title: "Lenguajes",
       list: [
         {
-          key: "HTML y CSS",
-          porcentage: 90,
+          key: "C# y ASP.NET Core",
+          porcentage: 70,
           description:
-            "Maquetado semántico, responsive design con Flexbox y Grid, accesibilidad, animaciones básicas y uso avanzado de Tailwind CSS.",
-          years: 4,
-        },
-        {
-          key: "React.js",
-          porcentage: 90,
-          description:
-            "Componentes funcionales, hooks personalizados, manejo de estado global (Context API), optimización de rendimiento.",
-          years: 4,
-        },
-        {
-          key: "Next.js",
-          porcentage: 90,
-          description:
-            "Rutas dinámicas, API Routes, manejo de metadata con Head y despliegue en Vercel.",
-          years: 4,
-        },
-        {
-          key: "Angular",
-          porcentage: 25,
-          description:
-            "Creación de componentes, data binding, uso básico de servicios e integración con APIs REST.",
+            "Desarrollo de APIs RESTful con ASP.NET Core, manejo de rutas, middlewares, autenticación JWT, integración con Entity Framework, migraciones, validaciones y principios de Clean Architecture.",
           years: 1,
         },
         {
           key: "Express.js",
           porcentage: 70,
           description:
-            "Creación de APIs REST, middleware personalizado, validación de datos, conexión a bases de datos (MongoDB, PostgreSQL).",
+            "Creación de APIs REST con Node.js, middlewares personalizados, validación y sanitización de datos, autenticación básica, conexión con MongoDB y PostgreSQL.",
           years: 3,
         },
         {
           key: "JavaScript",
           porcentage: 85,
           description:
-            "ES6+, manipulación del DOM, asincronía con Promises/async-await, manejo de errores y estructuras de datos comunes.",
+            "ES6+, asincronía, manejo de errores, estructuras de datos, y uso avanzado del lenguaje en el backend con Node.js.",
           years: 4,
-        },
-        {
-          key: "C#",
-          porcentage: 40,
-          description:
-            "Estructuras de control, POO, desarrollo de APIs básicas con ASP.NET Core y comprensión general del ecosistema .NET.",
-          years: 1,
         },
         {
           key: "Git",
           porcentage: 70,
           description:
-            "Control de versiones, ramas, pull requests, merge/rebase, trabajo colaborativo en GitHub/GitLab.",
+            "Control de versiones, ramas, pull requests, resolución de conflictos y flujo Git colaborativo.",
+          years: 4,
+        },
+        {
+          key: "HTML y CSS",
+          porcentage: 40,
+          description:
+            "Conocimientos básicos de maquetado y diseño, útiles para pruebas rápidas de integración en el frontend.",
+          years: 4,
+        },
+        {
+          key: "React.js",
+          porcentage: 40,
+          description:
+            "Uso básico de React para integración con backend y pruebas en entornos fullstack.",
           years: 4,
         },
         {
           key: "Python",
           porcentage: 40,
           description:
-            "Sintaxis clara, POO, scripts de automatización básocps y desarrollo de APIs básicas con FastAPI.",
+            "Automatización de tareas, scripts CLI y experiencia básica con FastAPI para creación de APIs REST.",
           years: 2,
         },
         {
           key: "Django",
           porcentage: 40,
           description:
-            "Creación de modelos, rutas, vistas, panel de administración, autenticación de usuarios y despliegue básico.",
+            "Conocimientos básicos en construcción de modelos, autenticación y uso del panel administrativo.",
           years: 1,
-        },
-        {
-          key: "WordPress",
-          porcentage: 60,
-          description:
-            "Creación y personalización de sitios usando Divi, instalación de plugins, configuración de SEO y optimización de rendimiento.",
-          years: 2,
         },
       ],
     },
+
     spokenLanguages: {
       title: "Idiomas",
       list: ["Español - Nativo", "Inglés - C1 Avanzado"],
@@ -169,14 +149,28 @@ export const es_translations: ITranslations = {
     title: "Experiencia Laboral",
     jobs: [
       {
+        position: "Desarrollador Full Stack (.NET y Express)",
+        company:
+          "Soul Lens Studios - Explorers (División de Propiedades Mérida)",
+        date: "Octubre 2024 - Presente",
+        tasks: [
+          "Formo parte de un nuevo departamento enfocado en el desarrollo de software interno y productos SaaS para el sector inmobiliario y empresarial.",
+          "Desarrollo de aplicaciones full stack utilizando TypeScript, Express.js, MongoDB, PostgreSQL, SQL Server y .NET.",
+          "Diseño y desarrollo de interfaces modernas con Next.js y React, implementando Server Side Rendering, rutas dinámicas y buenas prácticas de UI/UX.",
+          "Implementación de CRUDs complejos, autenticación de usuarios, control de acceso y gestión de permisos.",
+          "Diseño de arquitecturas escalables y mantenibles tanto en .NET como en el stack JavaScript.",
+          "Colaboración en el despliegue y mantenimiento de productos web con enfoque en rendimiento y seguridad.",
+        ],
+      },
+      {
         position: "Webmaster",
         company: "Propiedades Mérida",
-        date: "Febrero 2024 - Actualidad",
+        date: "Febrero 2024 - Octubre 2024",
         tasks: [
-          "Administré y actualicé todas las páginas y aplicaciones web, asegurando su óptimo funcionamiento y rendimiento.",
-          "Diseñé, maqueté y desarrollé sitios web con WordPress utilizando herramientas como Divi, HTML, CSS, JavaScript y React.",
-          "Implementé sitios responsivos y visualmente atractivos, integrando animaciones y diseños avanzados para mejorar la experiencia de usuario.",
-          "Desarrollé aplicaciones fullstack utilizando el stack JavaScript (React, Express, MongoDB, PostgreSQL) y servicios como Railway y Vercel para despliegue y hosting.",
+          "Administré y actualicé las páginas y aplicaciones web existentes de la empresa.",
+          "Diseñé y desarrollé sitios web en WordPress y React con foco en rendimiento y experiencia de usuario.",
+          "Implementé sitios responsivos con animaciones y layouts modernos.",
+          "En octubre fui reasignado internamente a Soul Lens Studios - Explorers, una nueva división orientada al desarrollo de software interno.",
         ],
       },
       {
@@ -184,9 +178,9 @@ export const es_translations: ITranslations = {
         company: "Grim Panda LLC",
         date: "Febrero 2020 - Febrero 2024",
         tasks: [
-          "Trabajé como líder de un equipo grande e internacional en la creación de storyboards y publicidad interactiva para empresas como Rovio, Zynga, Ubisoft entre otras.",
-          "Desempeñé un papel clave de conexión entre departamentos de diseño, desarrollo y producción.",
-          "Colaboré con desarrolladores en la creación de publicidad interactiva con HTML y JavaScript.",
+          "Lideré un equipo internacional de gran tamaño en la creación de storyboards y publicidad interactiva para empresas como Rovio, Zynga, Ubisoft, entre otras.",
+          "Actué como enlace clave entre los departamentos de diseño, desarrollo y producción.",
+          "Colaboré con desarrolladores en la creación de publicidad interactiva utilizando HTML y JavaScript.",
         ],
       },
       {

@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import { es_translations } from "@/translations/translations_es";
 
 const Education = () => {
   const { language } = useLanguage();
@@ -93,7 +94,7 @@ const Education = () => {
             }}
             onSwiper={() => setCertCount(education.certificates.list.length)} // <- NUEVO: actualiza contador de certificados al montar el carrusel
           >
-            {education.certificates.list.map((certificate) => (
+            {education.certificates.list.map((certificate, index) => (
               <SwiperSlide key={certificate.iFrame || certificate.title}>
                 <div
                   className="flex flex-col items-center bg-white/80 p-4 rounded-2xl shadow-md w-[180px] mx-auto"
@@ -109,7 +110,10 @@ const Education = () => {
                   <div
                     className="overflow-hidden rounded-xl"
                     dangerouslySetInnerHTML={{
-                      __html: certificate.iFrame.split("<script")[0],
+                      __html:
+                        es_translations.education.certificates.list[
+                          index
+                        ].iFrame.split("<script")[0],
                     }}
                     style={{ minWidth: "150px", minHeight: "270px" }}
                   />

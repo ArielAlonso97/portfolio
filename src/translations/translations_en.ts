@@ -2,7 +2,7 @@ export const en_translations: ITranslations = {
   language: "en",
   navbar: {
     sections: [
-      { title: "Presentation", id: "presentation" },
+      { title: "Introduction", id: "presentation" },
       { title: "Education", id: "education" },
       { title: "Skills", id: "skills" },
       { title: "Experience", id: "experience" },
@@ -10,10 +10,10 @@ export const en_translations: ITranslations = {
     ],
   },
   presentation: {
-    title: "Presentation",
-    role: "Mid Web Developer",
+    title: "Introduction",
+    role: "Full Stack Developer",
     description:
-      "I have a background in Digital Design, which provided me with design skills that have been fundamental in my development as a front-end programmer. This foundation sparked my interest in web development, and I am currently pursuing a second degree in Computer Systems while advancing towards becoming a full-stack developer. I specialize in technologies like React and Python, among others. With over 4 years of experience as a developer, I have acquired a diverse set of skills for creating websites and web applications.",
+      "I am a full stack developer with experience building web applications using technologies such as ASP.NET Core, C#, Express.js, SQL Server, PostgreSQL, MongoDB, React, and Next.js. I am currently pursuing a Bachelor's degree in Computer Systems Engineering and have over 4 years of development experience. I have worked on both internal solutions and SaaS products for the real estate and business sectors. I focus on building scalable, maintainable systems applying best practices in architecture, security, and version control.",
   },
   education: {
     title: "Education",
@@ -23,7 +23,7 @@ export const en_translations: ITranslations = {
         degree: "Associate Degree in Digital Design and Animation | 2017-2020",
       },
       {
-        name: "UTEL University",
+        name: "Universidad UTEL",
         degree:
           "Bachelor's Degree in Computer Systems Engineering | IN PROGRESS 2022-2026",
       },
@@ -52,17 +52,17 @@ export const en_translations: ITranslations = {
           issuedBy: "Universidad Tecmilenio",
         },
         {
-          title: "Intermediate Backend",
+          title: "Backend Intermediate",
           iFrame: `<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="f2d2438f-3801-4c26-a122-040b2116786d" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>`,
           issuedBy: "Universidad Tecmilenio",
         },
         {
-          title: "Advanced Backend with Node.js",
+          title: "Backend with Node.js Advanced Level",
           iFrame: `<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="2f918932-15fd-45c4-bc33-ff720256258f" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>`,
           issuedBy: "Universidad Tecmilenio",
         },
         {
-          title: "Fullstack JavaScript Training Path",
+          title: "Fullstack JavaScript Learning Path",
           iFrame: `<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="ea6c7b95-8ff9-412a-b985-a88f3a063a21" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>`,
           issuedBy: "Universidad Tecmilenio",
         },
@@ -78,70 +78,60 @@ export const en_translations: ITranslations = {
       title: "Languages",
       list: [
         {
-          key: "HTML & CSS",
-          porcentage: 90,
+          key: "C# and ASP.NET Core",
+          porcentage: 70,
           description:
-            "Semantic markup, responsive design with Flexbox and Grid, accessibility, basic animations, and advanced use of Tailwind CSS.",
-        },
-        {
-          key: "React.js",
-          porcentage: 90,
-          description:
-            "Functional components, custom hooks, global state management (Context API), performance optimization.",
-        },
-        {
-          key: "Next.js",
-          porcentage: 90,
-          description:
-            "Dynamic routes, API Routes, metadata management with Head, and deployment on Vercel.",
-        },
-        {
-          key: "Angular",
-          porcentage: 25,
-          description:
-            "Component creation, data binding, basic use of services, and integration with REST APIs.",
+            "Development of RESTful APIs with ASP.NET Core, routing, middleware, JWT authentication, integration with Entity Framework, migrations, validations, and Clean Architecture principles.",
+          years: 1,
         },
         {
           key: "Express.js",
           porcentage: 70,
           description:
-            "REST API creation, custom middleware, data validation, database connections (MongoDB, PostgreSQL).",
+            "Creation of REST APIs with Node.js, custom middleware, data validation and sanitization, basic authentication, connection to MongoDB and PostgreSQL.",
+          years: 3,
         },
         {
           key: "JavaScript",
           porcentage: 85,
           description:
-            "ES6+, DOM manipulation, async with Promises/async-await, error handling, and common data structures.",
-        },
-        {
-          key: "C#",
-          porcentage: 40,
-          description:
-            "Control structures, OOP, basic API development with ASP.NET Core, and general understanding of the .NET ecosystem.",
+            "ES6+, asynchronous programming, error handling, data structures, and advanced use of the language in backend with Node.js.",
+          years: 4,
         },
         {
           key: "Git",
           porcentage: 70,
           description:
-            "Version control, branching, pull requests, merge/rebase, collaborative work on GitHub/GitLab.",
+            "Version control, branching, pull requests, conflict resolution, and collaborative Git workflows.",
+          years: 4,
+        },
+        {
+          key: "HTML and CSS",
+          porcentage: 40,
+          description:
+            "Basic knowledge of layout and design, useful for quick frontend integration tests.",
+          years: 4,
+        },
+        {
+          key: "React.js",
+          porcentage: 40,
+          description:
+            "Basic use of React for backend integration and testing in full stack environments.",
+          years: 4,
         },
         {
           key: "Python",
           porcentage: 40,
           description:
-            "Clear syntax, OOP, basic automation scripts, and basic API development with FastAPI.",
+            "Task automation, CLI scripts, and basic experience with FastAPI for building REST APIs.",
+          years: 2,
         },
         {
           key: "Django",
           porcentage: 40,
           description:
-            "Model creation, routes, views, admin panel, user authentication, and basic deployment.",
-        },
-        {
-          key: "WordPress",
-          porcentage: 60,
-          description:
-            "Site creation and customization using Divi, plugin installation, SEO configuration, and performance optimization.",
+            "Basic knowledge in building models, authentication, and admin panel usage.",
+          years: 1,
         },
       ],
     },
@@ -154,14 +144,28 @@ export const en_translations: ITranslations = {
     title: "Work Experience",
     jobs: [
       {
+        position: "Full Stack Developer (.NET and Express)",
+        company:
+          "Soul Lens Studios - Explorers (Division of Propiedades Mérida)",
+        date: "October 2024 - Present",
+        tasks: [
+          "Part of a new department focused on developing internal software and SaaS products for the real estate and business sectors.",
+          "Develop full stack applications using TypeScript, Express.js, MongoDB, PostgreSQL, SQL Server, and .NET.",
+          "Design and develop modern interfaces with Next.js and React, implementing Server Side Rendering, dynamic routing, and UI/UX best practices.",
+          "Implement complex CRUD operations, user authentication, access control, and permission management.",
+          "Design scalable and maintainable architectures both in .NET and JavaScript stacks.",
+          "Collaborate on deployment and maintenance of web products with a focus on performance and security.",
+        ],
+      },
+      {
         position: "Webmaster",
         company: "Propiedades Mérida",
-        date: "February 2024 - Present",
+        date: "February 2024 - October 2024",
         tasks: [
-          "Managed and updated all websites and web applications, ensuring optimal performance and functionality.",
-          "Designed, coded, and developed websites with WordPress using tools like Divi, HTML, CSS, JavaScript, and React.",
-          "Implemented responsive and visually appealing sites, integrating animations and advanced designs to improve user experience.",
-          "Developed fullstack applications using the JavaScript stack (React, Express, MongoDB, PostgreSQL) and services like Railway and Vercel for deployment and hosting.",
+          "Managed and updated the company's existing web pages and applications.",
+          "Designed and developed websites using WordPress and React focusing on performance and user experience.",
+          "Implemented responsive sites with animations and modern layouts.",
+          "In October, I was internally reassigned to Soul Lens Studios - Explorers, a new division focused on internal software development.",
         ],
       },
       {
@@ -175,23 +179,23 @@ export const en_translations: ITranslations = {
         ],
       },
       {
-        position: "Full Stack JavaScript Intern",
+        position: "Full Stack JavaScript Developer Intern",
         company: "Pyxabyte",
         date: "June 2023 - December 2023",
         tasks: [
-          "Collaborated in the creation of a web platform for studies.",
-          "Page layout for desktop and responsive design using Next.js and React.",
-          "Endpoint development.",
-          "Exception handling implementation.",
-          "Input data validation.",
-          "Authorization management using Nest.js.",
+          "Collaborated on the creation of a web platform for studies.",
+          "Developed desktop layouts and responsive design using Next.js and React.",
+          "Developed endpoints.",
+          "Implemented exception handling.",
+          "Validated input data.",
+          "Managed authorization using Nest.js.",
         ],
       },
     ],
   },
   contact: {
     title: "Contact",
-    resumeButton: "Download CV",
+    resumeButton: "Download Resume",
     name: "Ariel Alvarado Arana",
     location: "Mérida, Yucatán",
     phone: "(+52) 99 92 97 19 85",

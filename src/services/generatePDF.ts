@@ -81,9 +81,6 @@ export const generatePDF = (translations: ITranslations) => {
   y += 8;
 
   doc.setFontSize(12);
-  const skillsDesc = doc.splitTextToSize(translations.skills.description, 170);
-  doc.text(skillsDesc, 20, y);
-  y += skillsDesc.length * 6;
 
   translations.skills.languages.list.forEach((skill) => {
     checkPageSpace();
